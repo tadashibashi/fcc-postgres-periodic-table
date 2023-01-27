@@ -2,6 +2,12 @@
 # Provides a terminal interface to query a database of scientific elements
 # by Aaron Ishibashi
 #
+# Usage: ./element.sh element
+# Parameter element may either be a:
+# - number: atomic number,  
+# - two-letter string: element symbol, first letter must be capitalized
+# - any other string: element name, first letter should be capitalized
+#
 PSQL="psql -X --username=freecodecamp --dbname=periodic_table --tuples-only -c"
 
 # if no argument provided
